@@ -1,0 +1,60 @@
+/* Menu Styling */
+.menu-bar {
+    -fx-background-color: brown;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.menu {
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-text-fill: white;
+}
+
+/* TableView Styling */
+.table-view .column-header-background {
+    -fx-background-color: grey;
+}
+
+.table-view .column-header, .table-view .column-header-background {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-border-color: black;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d4af37; /* dark gold */
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #d4af37; /* dark gold */
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* AnchorPane Styling */
+.anchorpane {
+    -fx-background-color: #d4af37; /* dark gold for the left side */
+}
+
+.right-anchorpane {
+    -fx-background-color: brightgreen;
+}
+
+.label {
+    -fx-text-fill: lightgrey;
+}
+
+.pane {
+    -fx-background-color: grey; /* grey for pane_before_last */
+}
+
+#bottom_pane {
+    -fx-background-color: #d4af37; /* dark gold */
+}

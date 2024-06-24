@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="621.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frank6.MainController">
+  <children>
+      <Pane prefHeight="24.0" prefWidth="911.0">
+         <children>
+            <Circle fill="#ff201f" layoutX="11.0" layoutY="12.0" radius="5.0" stroke="#f50808" strokeType="INSIDE" />
+            <Circle fill="#ffa11f" layoutX="32.0" layoutY="12.0" radius="5.0" stroke="#ffa11f" strokeType="INSIDE" />
+            <Circle fill="#b8bcbc" layoutX="53.0" layoutY="12.0" radius="5.0" stroke="#b8bcbc" strokeType="INSIDE" />
+            <Label layoutX="445.0" layoutY="4.0" text="FSC CSC325 _ Full Stack Project" />
+         </children>
+      </Pane>
+    <MenuBar prefWidth="900.0" VBox.vgrow="NEVER" styleClass="menu-bar">
+      <menus>
+        <Menu mnemonicParsing="false" text="File" styleClass="menu">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Open…" styleClass="menu-item" />
+            <Menu mnemonicParsing="false" text="Open Recent" styleClass="menu-item" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Save" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Save As…" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Revert" styleClass="menu-item" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" styleClass="menu-item" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" styleClass="menu-item" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit" styleClass="menu">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Redo" styleClass="menu-item" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Copy" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Paste" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Delete" styleClass="menu-item" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" styleClass="menu-item" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" styleClass="menu-item" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Theme" styleClass="menu">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" styleClass="menu-item" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="Help" styleClass="menu">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" styleClass="menu-item" />
+                  <MenuItem mnemonicParsing="false" text="Open…" styleClass="menu-item" />
+                  <Menu mnemonicParsing="false" text="Open Recent" styleClass="menu-item" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" styleClass="menu-item" />
+                  <MenuItem mnemonicParsing="false" text="Save" styleClass="menu-item" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" styleClass="menu-item" />
+                  <MenuItem mnemonicParsing="false" text="Revert" styleClass="menu-item" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" styleClass="menu-item" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" styleClass="menu-item" />
+               </items>
+            </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.2505567928730512, 0.5" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+        <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="124.0" styleClass="anchorpane">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="7.0" layoutY="14.0">
+                     <image>
+                        <Image url="@module5pic.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <TableView maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="522.0" styleClass="table-view">
+              <columns>
+                <TableColumn fx:id="id_column" editable="false" prefWidth="35.0" text="ID" />
+                <TableColumn fx:id="firstname_column" editable="false" prefWidth="103.0" text="First Name" />
+                  <TableColumn fx:id="lastname_column" editable="false" prefWidth="98.0" text="Last Name" />
+                  <TableColumn fx:id="department_column" editable="false" prefWidth="101.0" text="Department" />
+                  <TableColumn fx:id="major_column" editable="false" prefWidth="87.0" text="Major" />
+                  <TableColumn fx:id="email_column" editable="false" prefWidth="97.0" text="Email" />
+              </columns>
+            </TableView>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="499.0" minWidth="235.0" prefHeight="535.0" prefWidth="257.0" styleClass="right-anchorpane">
+          <children>
+            <Label fx:id="firstname_label" accessibleRole="TEXT_FIELD" layoutX="7.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="20.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="220.0" styleClass="label" text="First Name" textFill="#a1a1a1">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="lastname_label" accessibleRole="TEXT_FIELD" layoutX="7.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="20.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="220.0" styleClass="label" text="Last Name" textFill="#a1a1a1">
+                     <font>
+                        <Font size="15.0" fx:id="x11" />
+                     </font>
+                  </Label>
+                  <Label fx:id="department_label" accessibleRole="TEXT_FIELD" layoutX="7.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="20.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="220.0" styleClass="label" text="Department" textFill="#a1a1a1">
+                     <font>
+                        <Font size="15.0" fx:id="x111" />
+                     </font>
+                  </Label>
+                  <Label fx:id="major_label" accessibleRole="TEXT_FIELD" layoutX="9.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="20.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="220.0" styleClass="label" text="Major" textFill="#a1a1a1">
+                     <font>
+                        <Font size="15.0" fx:id="x1111" />
+                     </font>
+                  </Label>
+                  <Label accessibleRole="TEXT_FIELD" layoutX="10.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="20.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="220.0" styleClass="label" text="Email" textFill="#a1a1a1">
+                     <font>
+                        <Font size="15.0" fx:id="x11111" />
+                     </font>
+                  </Label>
+                  <Label accessibleRole="TEXT_FIELD" layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="20.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="220.0" styleClass="label" text="imageURL" textFill="#a1a1a1">
+                     <font>
+                        <Font size="15.0" fx:id="x111111" />
+                     </font>
+                  </Label>
+                  <Button fx:id="clear_button" defaultButton="true" layoutX="6.0" layoutY="323.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" text="Clear" styleClass="button">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="add_button" layoutX="6.0" layoutY="376.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" text="Add" styleClass="button">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="delete_button" layoutX="6.0" layoutY="430.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" text="Delete" styleClass="button">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="edit_button" layoutX="8.0" layoutY="482.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="220.0" text="Edit" styleClass="button">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Pane fx:id="pane_before_last" minWidth="-Infinity" prefHeight="20.0" prefWidth="911.0" HBox.hgrow="ALWAYS" styleClass="pane" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+      <Pane fx:id="bottom_pane" layoutX="10.0" layoutY="10.0" minWidth="-Infinity" prefHeight="13.0" prefWidth="911.0" styleClass="pane" />
+  </children>
+</VBox>
